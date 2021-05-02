@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const clientesRouter = require("./routes/clientes");
+const profesoresRouter = require("./routes/profesores");
 require("dotenv").config();
 
 // Conexión a MongoDB
@@ -18,6 +19,7 @@ const app = express();
 app.use(express.json());
 // Rutas
 app.use("/api/clientes", clientesRouter);
+app.use("/api/profesores", profesoresRouter);
 // Puerto
 const port = process.env.PORT || 3000;
 

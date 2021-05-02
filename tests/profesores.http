@@ -1,0 +1,36 @@
+GET http://localhost:3000/api/profesores
+
+###
+
+GET http://localhost:3000/api/clientes/608e3990097d59221419ec15
+
+###
+
+POST http://localhost:3000/api/profesores
+Content-Type: application/json
+
+{
+    "nombre": "Andrés",
+    "apellido": "Díaz",
+    "cedula": "12321871",
+    "universidad": "UCAB",
+    "pais": "Venezuela",
+    "materias": [
+        "Matemática",
+        "Física"
+    ]
+}
+
+###
+
+PATCH http://localhost:3000/api/profesores/608e3990097d59221419ec15
+Content-Type: application/json
+
+{
+    "nombre": "Juan",
+    "apellido": "López"
+}
+
+###
+
+DELETE http://localhost:3000/api/profesores/608e3990097d59221419ec15
