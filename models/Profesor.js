@@ -12,7 +12,6 @@ const profesorSchema = new mongoose.Schema({
   cedula: {
     type: String,
     required: true,
-    unique: true,
   },
   materias: {
     type: [String],

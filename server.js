@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const subscribersRouter = require("./routes/subscribers");
+const clientesRouter = require("./routes/clientes");
 require("dotenv").config();
 
 // Conexión a MongoDB
@@ -17,7 +17,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 // Rutas
-app.use("/subscribers", subscribersRouter);
+app.use("/api/clientes", clientesRouter);
 // Puerto
 const port = process.env.PORT || 3000;
 

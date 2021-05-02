@@ -12,7 +12,6 @@ const clienteSchema = new mongoose.Schema({
   cedula: {
     type: String,
     required: true,
-    unique: true,
   },
   universidad: {
     type: String,

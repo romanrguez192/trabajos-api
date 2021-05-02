@@ -1,0 +1,34 @@
+GET http://localhost:3000/api/clientes
+
+###
+
+GET http://localhost:3000/api/clientes/608e36503ac6db2d7cafc541
+
+###
+
+POST http://localhost:3000/api/clientes
+Content-Type: application/json
+
+{
+    "nombre": "Pedro",
+    "apellido": "Díaz",
+    "cedula": "29321871",
+    "universidad": "UCAB",
+    "pais": "Venezuela",
+    "carrera": "Derecho"
+}
+
+###
+
+PATCH http://localhost:3000/api/clientes/608e36503ac6db2d7cafc541
+Content-Type: application/json
+
+{
+    "nombre": "Juan",
+    "apellido": "López",
+    "carrera": "Ingeniería Industrial"
+}
+
+###
+
+DELETE http://localhost:3000/api/clientes/608e36503ac6db2d7cafc541

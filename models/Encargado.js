@@ -12,7 +12,6 @@ const encargadoSchema = new mongoose.Schema({
   cedula: {
     type: String,
     required: true,
-    unique: true,
   },
   cargo: {
     type: String,
