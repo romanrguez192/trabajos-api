@@ -18,7 +18,7 @@ const getProfesor = async (req, res, next) => {
   }
 };
 
-// Obtener todos los profesors
+// Obtener todos los profesores
 router.get("/", async (req, res) => {
   try {
     const profesors = await Profesor.find();
