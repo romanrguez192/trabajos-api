@@ -1,0 +1,38 @@
+GET http://localhost:3000/api/trabajos
+
+###
+
+GET http://localhost:3000/api/trabajos/608e41193ca5042e0087dd6c
+
+###
+
+POST http://localhost:3000/api/trabajos
+Content-Type: application/json
+
+{
+    "tema": "Ecuaciones Diferenciales",
+    "materia": "Cálculo",
+    "tipo": "Examen",
+    "cliente": "608e37af3ac6db2d7cafc542",
+    "profesor": "608e396c097d59221419ec14",
+    "encargado": "608e404b3ca5042e0087dd6b",
+    "fechaFinal": "2021-05-07",
+    "duracion": 120,
+    "precio": 17,
+    "pagoProfesor": 8
+}
+
+###
+
+PATCH http://localhost:3000/api/trabajos/608e41193ca5042e0087dd6c
+Content-Type: application/json
+
+{
+    "fechaFinal": "2021-05-14",
+    "duracion": 150,
+    "pagoProfesor": 10
+}
+
+###
+
+DELETE http://localhost:3000/api/trabajos/608e41193ca5042e0087dd6c

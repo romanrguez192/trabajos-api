@@ -14,17 +14,17 @@ const trabajoSchema = new mongoose.Schema({
     required: true,
   },
   cliente: {
-    type: Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: "Cliente",
     required: true,
   },
   profesor: {
-    type: Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: "Profesor",
     required: true,
   },
   encargado: {
-    type: Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: "Encargado",
     required: true,
   },
